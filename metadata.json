@@ -1,0 +1,5 @@
+{
+  "name": "Assistant designet by Stepanishin",
+  "description": "Upload a blank contract and a passport to automatically fill the contract with the passport details.",
+  "requestFramePermissions": []
+}
