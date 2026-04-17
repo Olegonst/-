@@ -60,7 +60,7 @@ interface Message {
 // --- Constants ---
 const ADMIN_PHONE = '+79250257141';
 const ADMIN_PASSWORD = 'Deceased070707';
-const LOGO_URL = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjQzVBMDU5IiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMxOTMgOCAyNTYgOHptMCA0NDhjLTExMCAwLTIwMC05MC0yMDAtMjAwUzE0NiA1NiAyNTYgNTZzMjAwIDkwIDIwMCAyMDBzLTkwIDIwMC0yMDAgMjAweiIvPjxwYXRoIGZpbGw9IiNDNUEwNTkiIGQ9Ik0yNTYgOTZjLTcwIDAtMTI4IDU4LTEyOCAxMjh2NjRjMCA3MCA1OCAxMjggMTI4IDEyOHMxMjgtNTggMTI4LTEyOHYtNjRjMC03MC01OC0xMjgtMTI4LTEyOHptNjQgMTI4YzAgMTgtMTQgMzItMzIgMzJzLTMyLTE0LTMyLTMyczE0LTMyIDMyLTMyczMyIDE0IDMyIDMyem0tMTI4IDBjMCAxOC0xNCAzMi0zMiAzMnMtMzItMTQtMzItMzJzMTQtMzIgMzItMzJzMzIgMTQgMzIgMzJ6bTY0IDEyOGMtMzUgMC02NC0yOS02NC02NGgxMjhjMCAzNS0yOSA2NC02NCA2NHoiLz48L3N2Zz4=';
+const LOGO_URL = 'https://picsum.photos/seed/skull-messenger-dark/512/512';
 
 // --- Helpers ---
 const fileToBase64 = (file: File): Promise<string> => {
@@ -634,7 +634,7 @@ export default function App() {
       
       {/* Sidebar Navigation (Navigation Rail) */}
       <div className="w-[72px] border-r border-white/10 flex flex-col items-center py-6 space-y-8 bg-[#121214]">
-        <div className="w-10 h-10 rounded-lg bg-[#1C1C1E] border border-[#C5A059]/20 p-0.5 shadow-[0_0_15px_rgba(197,160,89,0.1)] overflow-hidden">
+        <div className="w-10 h-10 rounded-lg bg-[#1C1C1E] border border-[#C5A059]/20 p-0.5 shadow-[0_0_15px_rgba(197,160,89,0.1)] overflow-hidden cursor-pointer hover:border-[#C5A059]/50 transition-colors" onClick={() => setActiveTab('chats')}>
           <img 
             src={appLogo} 
             alt="Logo" 

@@ -82,10 +82,21 @@
         "createdAt": { "type": "string", "format": "date-time" }
       },
       "required": ["id", "userId", "videoURL", "createdAt"]
+    },
+    "AppConfig": {
+      "title": "AppConfig",
+      "description": "Global application configuration",
+      "type": "object",
+      "properties": {
+        "appLogo": { "type": "string" },
+        "updatedBy": { "type": "string" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
     }
   },
   "firestore": {
     "/users/{userId}": { "schema": "User", "description": "User profiles" },
+    "/config/general": { "schema": "AppConfig", "description": "Global app settings" },
     "/chats/{chatId}": { "schema": "Chat", "description": "Chat metadata" },
     "/chats/{chatId}/messages/{messageId}": { "schema": "Message", "description": "Messages in a chat" },
     "/stories/{storyId}": { "schema": "Story", "description": "User stories" },
